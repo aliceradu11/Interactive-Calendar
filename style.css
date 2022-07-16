@@ -1,0 +1,125 @@
+body{
+    color: #eee;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #4834d4 74%);
+}
+
+canvas{
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #4834d4 74%);
+}
+
+.toCompute {
+    width: 780px;
+    height: 100px;
+    align-items: center;
+    justify-content:space-evenly;
+    background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+    display:inline-flex;
+    padding: 0 10px;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.calendar {
+    width: 800px;
+    height: 700px;
+    padding: 1%;   
+    background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -400px;
+    left: 50%;
+    top: 50%;
+    justify-content: center;
+}
+
+.location{
+    background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+    width: 800px;
+    height: 100px;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+#location{
+    width: 800px;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.month{
+    color:black;
+    width: 800px;
+    height: 100px;
+    background-image: url("pic2.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.month i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.weekdays{
+    width: 100%;
+    height: 100px;
+    padding: 1px 35px;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    width:calc(800px/7);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+.days div{
+    font-size: 20px;
+    display: flex;
+    height:50px;
+    width:calc(800px/7);
+    justify-content: center;
+    align-items:center;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.4;
+}
+
+.today{
+    background-color: rgb(49, 48, 48);
+    opacity: 80%;
+    border-color: white;
+    border-width: 40px;
+    border-radius: 20%;
+}
+
+.days div:hover:not(.today, .prev-date, .next-date){
+    background-color: #262626;
+    opacity: 40%;
+    color: rgb(167, 166, 166);
+    opacity: 80%;
+    border:rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+label {
+    font-size: 20px;
+}
